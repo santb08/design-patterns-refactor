@@ -18,6 +18,7 @@ Then, we left behind the primitive dependency that the project had, so we create
 
 ### Testing
 You can use `npx jest . --coverage` for running the tests. But here's the actual coverage as well.
+
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ----------|---------|----------|---------|---------|-------------------
