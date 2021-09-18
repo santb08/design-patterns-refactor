@@ -2,7 +2,7 @@
 In a first place, we decided to configure our testing environment for the project, so we could mock the first test scenarios before starting breaking stuff.
 We decided Jest, because it was a common library for all of us. Once we configured Jest in our project, we started mocking test for different functionalities of the Game:
 
-* Initializing the game
+* Initializing the gameO
 * Mocking the categories/questions
 * Rolling the dice
 * Checking the answer
@@ -15,3 +15,12 @@ Then, we left behind the primitive dependency that the project had, so we create
 * Question: So we can store the question content and it can be more scalable. And implemented some util methods/functions for them.
 * Game: We can isolate better the functionalities of the game, and this allowed us to test it easier that the old implementation. Also, we focused on refactoring using Javascript/ES2020 as well.
 
+
+### Testing
+You can use `npx jest . --coverage` for running the tests. But here's the actual coverage as well.
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |   94.67 |       80 |   91.67 |   94.59 |
+ game.js  |   94.67 |       80 |   91.67 |   94.59 | 17,75,136,140
+----------|---------|----------|---------|---------|-------------------
